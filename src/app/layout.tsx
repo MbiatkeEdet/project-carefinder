@@ -1,7 +1,9 @@
 import Header from "/src/app/components/Header";
 import ".//globals.css";
 import Login from "/src/app/Login"
-import Contact from "/src/app/Contact"
+import contact from "/src/app/contact"
+import Footer from "/src/app/components/Footer"
+import signup from "/src/app/signup"
 
 
 export const metadata = {
@@ -17,10 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="">
+        <signup/>
         <contact/>
       <login/>
       <Header/>
         {children}</body>
+        <Footer/>
     </html>
   );
 }
