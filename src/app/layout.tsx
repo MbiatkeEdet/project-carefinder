@@ -4,6 +4,7 @@ import Login from "/src/app/Login"
 import contact from "/src/app/contact"
 import Footer from "/src/app/components/Footer"
 import signup from "/src/app/signup"
+import error from "/src/app/error"
 
 
 export const metadata = {
