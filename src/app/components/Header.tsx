@@ -80,6 +80,7 @@ function Header()
             <button className=' border-2 bg-[#CEFF00] text-slate-800 rounded-full uppercase font-bold py-3 w-[250px] mb-5'>signup</button>
             </Link>
           </div>
+
         </div>
         </div>
       </nav>

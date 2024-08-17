@@ -5,9 +5,9 @@ import { signup } from '../Login/actions'
 
 const Page: FC = () => {
   return (
-    <div className="flex h-screen items-center justify-center bg-gray-300">
-      <div className="absolute grid grid-col w-full max-w-md p-8 bg-white rounded-lg shadow-md">
-        <h2 className="text-5xl font-semibold text-black-300 mb-6 text-center">Create an account</h2>
+    <div className="flex h-max items-center justify-center bg-gray-300">
+      <div className="flex grid grid-col w-full h-max max-w-md p-8 bg-white rounded-lg shadow-md">
+        <h2 className="h-min text-5xl font-semibold text-black-300 mb-6 text-center">Create an account</h2>
         <p className="text-black-300 font-light text-3xl mb-7 text-center">Kickstart your healthy lifestyle journey!</p>
         <form className="space-y-8">
           <div>

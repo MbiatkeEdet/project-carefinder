@@ -48,8 +48,8 @@ function Home({ children }: { children: React.ReactNode }) {
             </div>
           </div>
           {/* card 2 */}
-          <div className="flex flex-cols-3 rounded-md shadow-md">
-            <div className="p-6 flex flex-col items-center hover:bg-Grey/200">
+          <div className="flex flex-col p-8 rounded-md shadow-md">
+            <div className="p-8 flex flex-col items-center hover:bg-Grey/200">
               <Image src={hospitallogin} width={422} height={232} />
               <h3 className="mt-5 mb-2 text-Grey/800 text-lg font-semibold">
                 Advanced Search
