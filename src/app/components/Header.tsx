@@ -14,7 +14,7 @@ function Header()
   return (
     <header className="bg-slate-700 text-[#CEFF00] w-full ease-in duration-300 fixed top-0 left-0 z-10">
       <nav className="flex max-w-[1366] mx-auto h-full justify-between items-center p-4">
-        <div className="text-1xl mt-2 font-bold">
+        <div className="text 1xl mt-2 font-bold">
              <div>
                 <ul className="hidden md:flex bold font-semibold text-1xl lg:text-10px] text-slate-800">
                   <li className="mr-4 lg:mr-8 hover:text-blue-200">

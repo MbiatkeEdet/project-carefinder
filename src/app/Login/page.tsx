@@ -1,14 +1,14 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { FC } from 'react';
-import { Login } from './actions'
+import { login } from './actions'
 
 const Page: FC = () => {
   return (
     <div className="flex h-screen items-center justify-center bg-gray-300">
       <div className=" relative grid grid-cols-2 w-full max-w-md p-8 bg-white rounded-lg shadow-md">
         <h2 className="text-2xl font-semibold text-blue-300 mb-6 text-center">Welcome,</h2>
-        <form formAction="Login" className="space-y-8">
+        <form formAction={login} className="space-y-8">
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
             <input
@@ -37,7 +37,7 @@ const Page: FC = () => {
           <button
             type="submit"
             className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-white bg-slate-700 hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            formAction={Login}
+            formAction={login}
           >
             Sign In
           </button>
