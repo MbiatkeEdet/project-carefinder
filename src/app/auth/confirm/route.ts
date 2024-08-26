@@ -1,9 +1,10 @@
-import { NextResponse } from 'next/server'
+import { NextRequest } from 'next/server'
 import { EmailOtpType } from '@supabase/supabase-js'
 
 import { createClient } from '@/utils/supabase/server'
+import { redirect } from 'next/navigation'
 
-export async function GET(request: { url: string | URL; nextUrl: { clone: () => any } }) {
+export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url)
   const token_hash = searchParams.get('token_hash')
   const type = searchParams.get('type') as EmailOtpType | null
@@ -22,12 +23,11 @@ export async function GET(request: { url: string | URL; nextUrl: { clone: () => 
       token_hash,
     })
     if (!error) {
-      redirectTo.searchParams.delete('next')
-      return NextResponse.redirect(redirectTo)
+      redirect(next)
     }
   }
 
   // redirect the user to an error page with some instructions
-  redirectTo.pathname = '/error'
-  return NextResponse.redirect(redirectTo)
+  redirect('/error')
+  
 }
