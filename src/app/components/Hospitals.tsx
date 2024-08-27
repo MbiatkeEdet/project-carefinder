@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import HospitalList from "./HospitalList";
-import Pagination from "./pagination";
-import { CSVLink } from "react-csv";
-
+import { CSVLink } from 'react-csv';
+import { Pagination } from 'Pagination';
 const SkeletonCard: React.FC = () => (
   <div className="max-w-sm p-8 bg-gray-200 animate-pulse flex flex-row justify-between border border-gray-200 rounded-lg shadow hover:bg-gray-100">
     <div className="h-8 bg-gray-300 rounded mb-2"></div>

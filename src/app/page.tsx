@@ -1,8 +1,8 @@
 
 import React from 'react'
 import Link from 'next/link'
-import Header from "/src/app/components/Header"
-import Footer from "/src/app/components/Footer"
+import Header from "../../src/app/components/Header"
+import Footer from "../../src/app/components/Footer"
 import Image from 'next/image'
 import hospital7 from '/public/hospital7.jpg'
 import hospitallogin from '/public/hospital-login.jpg'
@@ -13,7 +13,7 @@ function Home({ children }: { children: React.ReactNode }) {
       <h1 className="font-semibold text-14xl h-40 mt-7">Home</h1>
       <div className="grid grid-cols-2 grid-rows-2 bg-blue-200">
         <div className="relative">
-          <Image layout="responsive"src={hospital7} width={422} height={123}/>
+          <Image layout="responsive"src={hospital7} width={422} height={123} alt="display-icon"/>
         </div>
         <div>
         <h2 className="font-light text-center text-6xl text-blue-600">Finding the right medical care is crucial for your well-being and peace of mind</h2>
@@ -34,7 +34,7 @@ function Home({ children }: { children: React.ReactNode }) {
           <div className="flex flex-col rounded-md shadow-md">
             <div className="p-6 flex flex-col items-center hover:bg-Grey/200">
               <Image
-                src={hospital7} with={422} height={123}
+                src={hospital7} width={422} height={123}
                 alt="download-icon"
               />
               <h3 className="mt-5 mb-2 text-Grey/800 text-lg font-semibold">
@@ -50,14 +50,14 @@ function Home({ children }: { children: React.ReactNode }) {
           {/* card 2 */}
           <div className="flex flex-col p-8 rounded-md shadow-md">
             <div className="p-8 flex flex-col items-center hover:bg-Grey/200">
-              <Image src={hospitallogin} width={422} height={232} />
+              <Image layout="responsive"src={hospitallogin} width={422} height={232} alt="search-con" />
               <h3 className="mt-5 mb-2 text-Grey/800 text-lg font-semibold">
                 Advanced Search
               </h3>
               <p className="text-Grey/600 font-light text-center">
                 Our intuitive search filters allow you to narrow down your
                 hospital search based on location, medical specialization,
-                available services, and more. With just a few clicks, you'll
+                available services, and more. With just a few clicks, You will
                 find the hospitals that best match your needs.
               </p>
             </div>
