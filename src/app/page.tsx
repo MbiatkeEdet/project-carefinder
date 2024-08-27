@@ -91,13 +91,13 @@ const Home: React.FC<HomeProps> = ({ children }) => {
     <>
       <Header />
       <div className="max-w-4xl mx-auto py-2">
-        <h1 className="font-semibold text-4xl h-40 mt-7">Home</h1>
-        <div className="grid grid-cols-2 grid-rows-2 bg-blue-200">
+        <h1 className="font-light text-4xl h-20 mt-[100px]">Welcome To The Carefinder Application</h1>
+        <div className="grid grid-col-2 grid-rows-2 bg-blue-200">
           <div className="relative">
-            <Image layout="responsive" src={hospital7} width={422} height={123} alt="display-icon" />
+            <Image layout="responsive" src={hospital7} width={422} height={223} alt="display-icon" />
           </div>
           <div>
-            <h2 className="font-light text-center text-6xl text-blue-600">
+            <h2 className="font-light text-center text-6xl text-blue-700">
               Finding the right medical care is crucial for your well-being and peace of mind
             </h2>
             <p className="font-light text-center text-4xl mt-4 text-blue-600">
