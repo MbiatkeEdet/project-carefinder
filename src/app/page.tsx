@@ -86,7 +86,7 @@ interface HomeProps {
   children: React.ReactNode;
 }
 
-const Home: React.FC<HomeProps> = ({ children }) => {
+const Page: React.FC<HomeProps> = ({ children }) => {
   return (
     <>
       <Header />
@@ -139,6 +139,6 @@ const Home: React.FC<HomeProps> = ({ children }) => {
   );
 }
 
-export default Home;
+export default Page;
 
 
