@@ -31,11 +31,7 @@ const HospitalCard: React.FC<HospitalCardProps> = ({ name, address }) => {
     <div className="max-w-sm p-4 bg-white flex flex-col justify-between border border-gray-200  bg-gray-100 rounded-lg  hover:bg-gray-200">
       <div className="flex justify-end">
         <button onClick={handleOpenGoogleMaps}>
-          <img
-            className="w-8 h-8 cursor-pointer"
-            src="src/assets/google-maps.svg"
-            alt="Google Maps"
-          />
+          
         </button>
       </div>
       <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900">

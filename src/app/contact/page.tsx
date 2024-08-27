@@ -26,7 +26,7 @@ export default function Contact() {
             Contact Us
           </h2>
           <p className="mb-8 lg:mb-16 font-bold text-center text-gray-700 dark:text-gray-400 sm:text-xl">
-            Didn't find an hospital in your location? Want to send feedback about Carefinder?
+            Didnt find an hospital in your location? Want to send feedback about Carefinder?
             Need details about our Business plan? Let us know.
           </p>
           <form action="#" className="space-y-8">
