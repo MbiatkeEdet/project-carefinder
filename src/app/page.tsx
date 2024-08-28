@@ -82,11 +82,11 @@ import Footer from '../../src/app/components/Footer';
 import hospital7 from '/public/hospital7.jpg';
 import hospitallogin from '/public/hospital-login.jpg';
 
-interface HomeProps {
+interface PageProps {
   children: React.ReactNode;
 }
 
-const HomeProps: React.FC<HomeProps> = ({ children }) => {
+const Page: React.FC<PageProps> = ({ children }) => {
   return (
     <>
       <Header />
@@ -139,6 +139,6 @@ const HomeProps: React.FC<HomeProps> = ({ children }) => {
   );
 }
 
-export default HomeProps;
+export default Page;
 
 
