@@ -31,9 +31,9 @@ const Page: React.FC<PageProps> =({ children }) => {
        <div>
        </div>
        <div>
-         <section className="bg-White py-20 mt-20">
+         <section className="bg-white py-20 mt-20">
          <div className="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-           <h1 className="text-3xl text-center text-Grey/800 font-semibold md: text-4">
+           <h1 className="text-3xl text-center text-gray-800 font-semibold md: text-4">
              Gain access to the most up-to-date and reliable hospital information
              in Nigeria.
           </h1>
