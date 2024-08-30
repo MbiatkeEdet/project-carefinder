@@ -10,7 +10,7 @@ import hospitallogin from '/public/hospital-login.jpg'
 interface PageProps {
   children?: React.ReactNode;
 }
-const Page: React.FC<PageProps> =({ children }) => {
+const Page: React.FC<PageProps> = ({ children }) => {
   return (
 
     <>
@@ -19,7 +19,7 @@ const Page: React.FC<PageProps> =({ children }) => {
       <h1 className="font-semibold text-4xl h-40 mt-7">Home</h1>
       <div className="grid grid-cols-2 grid-rows-2 bg-blue-200">
         <div className="relative">
-          <Image layout="responsive"src={hospital7} width={422} height={123} alt="display-icon"/>
+          <Image layout="intrinsic"src={hospital7} width={422} height={123} alt="display-icon"/>
         </div>
         <div>
          <h2 className="font-light text-center text-6xl text-blue-600">Finding the right medical care is crucial for your well-being and peace of mind</h2>
@@ -38,15 +38,15 @@ const Page: React.FC<PageProps> =({ children }) => {
              in Nigeria.
           </h1>
         <div className="flex flex-col rounded-md shadow-md">
-          <div className="p-6 flex flex-col items-center hover:bg-Grey/200">
+          <div className="p-6 flex flex-col items-center hover:bg-gray-200">
              <Image
                 src={hospital7} width={422} height={123}
                 alt="download-icon"
               />
-              <h3 className="mt-5 mb-2 text-Grey/800 text-lg font-semibold">
+              <h3 className="mt-5 mb-2 text-gray-800 text-lg font-semibold">
                 Download and save
               </h3>
-              <p className="text-Grey/600 font-light text-center">
+              <p className="text-gray-600 font-light text-center">
                 Found a hospital you love? Download CSV or share quick access
                 later. Carefinder allows you to download and share, making it
                 convenient to revisit them whenever you need.
@@ -55,12 +55,12 @@ const Page: React.FC<PageProps> =({ children }) => {
            </div>
            {/* card 2 */}
            <div className="flex flex-col p-8 rounded-md shadow-md">
-             <div className="p-8 flex flex-col items-center hover:bg-Grey/200">
-               <Image layout="responsive"src={hospitallogin} width={422} height={232} alt="search-con" />
-               <h3 className="mt-5 mb-2 text-Grey/800 text-lg font-semibold">
+             <div className="p-8 flex flex-col items-center hover:bg-gray-200">
+               <Image layout="intrinsic"src={hospitallogin} width={422} height={232} alt="search-icon" />
+               <h3 className="mt-5 mb-2 text-gray-800 text-light font-semibold">
                  Advanced Search
                </h3>
-               <p className="text-Grey/600 font-light text-center">
+               <p className="text-gray-600 font-light text-center">
                  Our intuitive search filters allow you to narrow down your
                  hospital search based on location, medical specialization,
                  available services, and more. With just a few clicks, You will
@@ -69,7 +69,7 @@ const Page: React.FC<PageProps> =({ children }) => {
              </div>
            </div>
          </div>
-        
+        { children }
          </section>
          <Footer />
         

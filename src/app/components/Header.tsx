@@ -57,7 +57,7 @@ function Header()
         }>
         <div className="w-full">
 
-          <ul className='uppercase font-bold text-2xl'>
+          <ul className='uppercase font-light text-2xl'>
             
             <li onClick={handleSmallerScreensNavigation} className='py-4 hover:text-[#CEFF00]-[#CEFF00] cursor-pointer'>
                <Link href="/">Home</Link>
