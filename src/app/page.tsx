@@ -7,7 +7,10 @@ import Image from 'next/image'
 import hospital7 from '/public/hospital7.jpg'
 import hospitallogin from '/public/hospital-login.jpg'
 
-function Home( children? : { children: React.ReactNode }) {
+interface PageProps {
+  children?: React.ReactNode;
+}
+const Page: React.FC<PageProps> =({ children }) => {
   return (
      <div className="max-w 4xl mx-auto py-2">
       <h1 className="font-semibold text-14xl h-40 mt-7">Home</h1>
@@ -73,7 +76,7 @@ function Home( children? : { children: React.ReactNode }) {
   );
 }
 <Header/>
-export default Home;
+export default Page;
 
 // import React from 'react';
 // import Image from 'next/image';
