@@ -12,8 +12,11 @@ interface PageProps {
 }
 const Page: React.FC<PageProps> =({ children }) => {
   return (
-     <div className="max-w 4xl mx-auto py-2">
-      <h1 className="font-semibold text-14xl h-40 mt-7">Home</h1>
+
+    <>
+    <Header />
+     <div className="max-w-4xl mx-auto py-2">
+      <h1 className="font-semibold text-4xl h-40 mt-7">Home</h1>
       <div className="grid grid-cols-2 grid-rows-2 bg-blue-200">
         <div className="relative">
           <Image layout="responsive"src={hospital7} width={422} height={123} alt="display-icon"/>
@@ -68,14 +71,15 @@ const Page: React.FC<PageProps> =({ children }) => {
          </div>
         
          </section>
+         <Footer />
         
        </div>
       
     </div>
+    </>
     
   );
-}
-<Header/>
+};
 export default Page;
 
 // import React from 'react';
