@@ -1,10 +1,7 @@
-import Header from "/src/app/components/Header";
+import Header from "../../src/app/components/Header";
 import ".//globals.css";
-import Login from "/src/app/Login"
-import contact from "/src/app/contact"
-import Footer from "/src/app/components/Footer"
-import signup from "/src/app/signup"
-import error from "/src/app/error"
+import Footer from "../../src/app/components/Footer"
+import React from "react";
 
 
 export const metadata = {
@@ -20,10 +17,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="">
-        <error/>
-        <signup/>
-        <contact/>
-      <login/>
       <Header/>
         {children}</body>
         <Footer/>
